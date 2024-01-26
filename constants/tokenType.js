@@ -34,9 +34,10 @@ const TOKEN = {
     LPAREN: "(",
     RPAREN: ")",
 
-    PLUS: "+",
-    MINUS: "-",
-    MULTIPLY: "*",
+    PLUS: "mais",
+    MINUS: "menos",
+    MULTIPLY: "vezes",
+
     DIVIDE: "/",
     INT_DIVIDE: "//",
     MOD: "%",

@@ -5,8 +5,8 @@ const Parser = require("./Parser/parser");
 const Evaluate = require("./Evaluator/evaluate");
 const Order = require("./Evaluator/order");
 
-const text = "((1 mais 1) mais (3 vezes 2) menos 1)";
-// const text = "1 mais 1 mais 3 vezes 2 menos 1";
+// const text = "((1 mais 1) mais (3 vezes 2) menos 1)";
+const text = "1 mais 1 mais 3 vezes 2 menos 1";
 
 const lexer = new Lexer(text);
 const tokens = lexer.generateTokens();

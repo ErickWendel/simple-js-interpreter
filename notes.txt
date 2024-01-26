@@ -1,0 +1,21 @@
+change index.js to evaluate "((1 mais 1) mais (3 vezes 2) menos 1)"
+change constants/tokenType
+change Lexer/Lexer.js
+    updateCharIfCustomOperator() {
+        const customOperators = [
+            'mais',
+            'menos',
+            'vezes',
+        ]
+
+        for (const operator of customOperators) {
+            if (this.currentChar === operator[0]) {
+                const portion = this.text.slice(this.index - 1, (this.index + (operator.length - 1)));
+
+                if (portion !== operator) continue
+
+                this.currentChar = operator
+                this.index += operator.length - 1
+            }
+        }
+    }
